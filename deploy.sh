@@ -1,17 +1,36 @@
-echo "Fetching all remote branches..."
-git fetch --all
+#!/bin/bash
 
-echo "Updating all submodules recursively..."
-git submodule update --init --recursive --remote
+# Exit immediately if a command exits with a non-zero status.
+set -e
 
-echo "All submodules are up to date."
-echo "Staging changes to the main repository..."
-git add .
+echo "Deploying React app from submodule to GitHub Pages..."
 
-echo "Committing changes to the main repository..."
-git commit -m "Chore: Update submodules for deployment"
+# 1. Navigate into the submodule directory
+# Replace 'your-react-app-folder' with the name of your submodule
+cd gem-connect
 
-echo "Pushing changes to the remote repository..."
-git push origin main
+# 2. Install dependencies and build the React app
+npm install
+npm run build
 
-echo "Deployment script completed successfully."
+# 3. Navigate back to the root of the main repository
+cd ..
+
+# 4. Clean up any previous build folder and copy the new one
+rm -rf build
+cp -R gem-connect/build .
+
+echo "Build folder copied to root directory."
+
+# 5. Push the build folder to the 'gh-pages' branch of the main repo
+# The 'git init' and other commands are to create a new branch containing only the build files.
+
+cd build
+git init
+git add -A
+git commit -m "Deploy to GitHub Pages"
+
+# Replace 'your-username' and 'your-portfolio-repo' with your details
+git push -f https://github.com/kalosa0770/GemConnect.git master:gh-pages
+
+echo "Deployment complete! Your site should be live shortly."
