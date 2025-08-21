@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/GemConnect/static/css/main.bd6188ce.css",
+    "main.js": "/GemConnect/static/js/main.7ced95c7.js",
+    "static/js/453.17d43746.chunk.js": "/GemConnect/static/js/453.17d43746.chunk.js",
+    "static/media/garnet.jpg": "/GemConnect/static/media/garnet.439105df84306c94a31d.jpg",
+    "static/media/alexandrite.jpg": "/GemConnect/static/media/alexandrite.5e16e5c2fa406bc02126.jpg",
+    "static/media/jadeite.jpg": "/GemConnect/static/media/jadeite.84bc97a7d6c66a2c1cc9.jpg",
+    "static/media/tanzanite.jpg": "/GemConnect/static/media/tanzanite.2f3ede66db89ffeffd5e.jpg",
+    "static/media/limestone.jpeg": "/GemConnect/static/media/limestone.d171a258ea142dd90f45.jpeg",
+    "static/media/stones.jpeg": "/GemConnect/static/media/stones.540c68e83f053fa234c2.jpeg",
+    "static/media/gemstone.jpeg": "/GemConnect/static/media/gemstone.ecd50abbe8e6448105d3.jpeg",
+    "static/media/copper.jpeg": "/GemConnect/static/media/copper.af9c18956edb12885b71.jpeg",
+    "static/media/gold.jpeg": "/GemConnect/static/media/gold.80f6563d88de40343ad5.jpeg",
+    "static/media/gem1.jpeg": "/GemConnect/static/media/gem1.a206652f49ca6418dc00.jpeg",
+    "static/media/larimar.webp": "/GemConnect/static/media/larimar.5a0025154f029b0d6f7e.webp",
+    "index.html": "/GemConnect/index.html",
+    "main.bd6188ce.css.map": "/GemConnect/static/css/main.bd6188ce.css.map",
+    "main.7ced95c7.js.map": "/GemConnect/static/js/main.7ced95c7.js.map",
+    "453.17d43746.chunk.js.map": "/GemConnect/static/js/453.17d43746.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd6188ce.css",
+    "static/js/main.7ced95c7.js"
+  ]
+}
